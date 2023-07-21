@@ -1,5 +1,7 @@
 package com.example.webservice;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
@@ -12,9 +14,11 @@ import com.example.webservice.config.AppConfig;
 @EnableConfigurationProperties(AppConfig.class)
 public class WebserviceApplication {
 
+	static final Logger LOGGER = LoggerFactory.getLogger(WebserviceApplication.class);
+
 	public static void main(String[] args) {
 		SpringApplication.run(WebserviceApplication.class, args);
-		System.out.println("Started...");
+		LOGGER.info("Application Started {} ....", args.toString());
 	}
 
 }

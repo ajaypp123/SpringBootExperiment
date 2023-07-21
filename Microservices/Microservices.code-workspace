@@ -1,0 +1,28 @@
+{
+	"folders": [
+		{
+			"path": "./hotelservice"
+		},
+		{
+			"path": "./rating"
+		},
+		{
+			"path": "./userservice"
+		},
+		{
+			"path": "./serviceregistry"
+		},
+		{
+			"path": "./gateway"
+		},
+		{
+			"name": "configserver",
+			"path": "configserver"
+		}
+	],
+	"settings": {
+		"java.compile.nullAnalysis.mode": "automatic",
+		"java.dependency.packagePresentation": "hierarchical",
+		"java.project.explorer.showNonJavaResources": true
+	}
+}
